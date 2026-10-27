@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: new_cyber_postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: SecretPassword123
+      POSTGRES_DB: cyber_db
+    ports:
+      - "5432:5432"
